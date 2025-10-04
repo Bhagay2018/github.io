@@ -1,22 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Book Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delit Group | Smarter Choices for Smarter Living</title>
+  <meta name="description" content="Delit Group helps families and learners compare the best books, educational games, and electronics to enhance knowledge, creativity, and daily life.">
   <style>
-    body { font-family: Arial; margin: 40px; background: #fafafa; }
-    h1 { color: #222; }
-    .book-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #004aad;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: linear-gradient(to right, #004aad, #0073e6);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .section {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #004aad;
+    }
+    footer {
+      background: #002b66;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .category-card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .category-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #004aad;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .category-card a:hover {
+      background: #0073e6;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Book Website</h1>
-  <div class="book-card">
-    <h2>Book Title Example</h2>
-    <p>Author: John Doe</p>
-    <p>ISBN: 9780143440055</p>
-    <p>Description: This is a demo book page.</p>
-  </div>
+
+  <header>
+    <h1>Delit Group</h1>
+    <p>Smarter Choices for Smarter Living</p>
+    <nav>
+      <a href="#about">Who We Are</a>
+      <a href="#compare">Compare & Learn</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Helping Families & Learners Choose Better</h2>
+    <p>Discover the best books, educational games, and electronics — carefully compared and reviewed to help you and your children grow smarter, stronger, and safer in the digital age.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Who We Are</h2>
+    <p><strong>Delit Group</strong> is an independent knowledge-based store and comparison hub. We believe learning doesn’t stop with school — it grows with the right tools, games, and gadgets. Our mission is to guide customers toward products that truly make a difference in education, development, and creativity.</p>
+    <p>From helping children learn beyond textbooks to finding technology that supports growth — we curate and compare what matters most for your family’s future.</p>
+  </section>
+
+  <section id="compare" class="section">
+    <h2>Compare & Choose the Best</h2>
+    <p>Explore detailed comparisons, reviews, and recommendations for products across our key sections:</p>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <h3>📚 Books</h3>
+        <p>Compare top-rated educational books — from school syllabus guides to general knowledge, creative learning, and life skills for all ages.</p>
+        <a href="#">Explore Books</a>
+      </div>
+
+      <div class="category-card">
+        <h3>🎮 Games</h3>
+        <p>Find the best logical and physical games that develop problem-solving, teamwork, and reduce unnecessary screen time.</p>
+        <a href="#">Explore Games</a>
+      </div>
+
+      <div class="category-card">
+        <h3>💡 Electronics</h3>
+        <p>Compare smart gadgets, learning tablets, and educational electronics — explained simply, with key technical insights and the best deals online.</p>
+        <a href="#">Explore Electronics</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h3>Contact Us</h3>
+    <p><strong>Delit Group</strong><br>
+    E-10/524, Nehru Vihar, Delhi 110094<br>
+    GST No: 07BALPG97451ZL<br>
+    📞 +91 9654850604<br>
+    ✉️ <a href="mailto:support@delitgroup.in" style="color:white;">support@delitgroup.in</a></p>
+
+    <p>© <span id="year"></span> Delit Group. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
+Update homepage for Delit Group website
