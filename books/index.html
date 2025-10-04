@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books | Delit Group</title>
+  <meta name="description" content="Compare and explore educational and story books selected by Delit Group — best for learning, creativity, and children's development.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      color: #004aad;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+      flex: 1;
+    }
+    .card h2 {
+      color: #004aad;
+      font-size: 18px;
+      margin: 0 0 0.5rem;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .card a {
+      background: #004aad;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .card a:hover {
+      background: #0073e6;
+    }
+    footer {
+      background: #002b66;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Delit Group</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books/">Books</a>
+      <a href="/games/">Games</a>
+      <a href="/electronics/">Electronics</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Books Collection</h1>
+    <p style="text-align:center; max-width:800px; margin:0 auto 2rem;">
+      Explore curated books for children and learners — handpicked for growth, imagination, and skill development.
+    </p>
+
+    <div class="grid">
+
+      <!-- Book 1 -->
+      <div class="card">
+        <img src="/assets/images/books/tales-from-indian-mythology.jpg" alt="Tales from Indian Mythology Book Cover" />
+        <div class="card-content">
+          <h2>Tales from Indian Mythology</h2>
+          <p>10 beautifully illustrated stories introducing children to Indian mythology — perfect for ages 5–9 years.</p>
+          <a href="/books/tales-from-indian-mythology.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- You can copy and paste the below block to add more books -->
+      <!--
+      <div class="card">
+        <img src="/assets/images/books/BOOK-FILENAME.jpg" alt="Book Title" />
+        <div class="card-content">
+          <h2>Book Title</h2>
+          <p>Short 1-2 line summary about this book and what makes it special.</p>
+          <a href="/books/bookname.html">View Details</a>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Delit Group</strong> · E-10/524, Nehru Vihar, Delhi 110094 · GST: 07BALPG97451ZL</p>
+    <p>📞 +91 9654850604 · ✉️ <a href="mailto:support@delitgroup.in" style="color:white;">support@delitgroup.in</a></p>
+    <p>© <span id="year"></span> Delit Group. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
