@@ -1,32 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Games | Delit Group</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta name="description" content="Educational and development games selected by Delit Group — logic, physical activity and screen-time friendly options.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      color: #004aad;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-content {
+      padding: 1rem;
+      flex: 1;
+    }
+    .card h2 {
+      color: #004aad;
+      font-size: 18px;
+      margin: 0 0 0.5rem;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .card a {
+      background: #004aad;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .card a:hover {
+      background: #0073e6;
+    }
+    footer {
+      background: #002b66;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Games</h1>
+    <h1>Delit Group</h1>
     <nav>
-      <a href="/">Home</a> |
-      <a href="/books/">Books</a> |
-      <a href="/games/">Games</a> |
+      <a href="/">Home</a>
+      <a href="/books/">Books</a>
+      <a href="/games/">Games</a>
       <a href="/electronics/">Electronics</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="game-list">
-    <div class="game-item">
-      <img src="/images/cuboro-standard-16.jpg" alt="Cuboro Standard 16">
-      <h2><a href="/games/cuboro-standard-16.html">Cuboro Standard 16</a></h2>
-      <p>Classic marble track system for creative construction and fun learning.</p>
+  <main>
+    <h1>Games Collection</h1>
+    <p style="text-align:center; max-width:800px; margin:0 auto 2rem;">
+      Handpicked games that boost logic, teamwork, physical activity and reduce screen time.
+    </p>
+
+    <div class="grid">
+
+      <!-- Game 1 -->
+      <div class="card">
+        <img src="/assets/images/games/cuboro-standard-16.jpg" alt="Cuboro Standard 16">
+        <div class="card-content">
+          <h2>Cuboro Standard 16</h2>
+          <p>Marble-run logic and spatial thinking set — promotes planning, sequencing and hands-on problem solving. Recommended age 5+.</p>
+          <a href="/games/cuboro-standard-16.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="card">
+        <img src="/assets/images/games/magna-tiles-classic.jpg" alt="Magna-Tiles Classic">
+        <div class="card-content">
+          <h2>Magna-Tiles Classic</h2>
+          <p>Magnetic building tiles for creative geometry, early STEM learning and cooperative play — great for ages 3+.</p>
+          <a href="/games/magna-tiles-classic.html">View Details</a>
+        </div>
+      </div>
+
+      <!-- Game 3 -->
+      <div class="card">
+        <img src="/assets/images/games/logic-blocks.jpg" alt="Logic Blocks Puzzle">
+        <div class="card-content">
+          <h2>Logic Blocks Puzzle</h2>
+          <p>Compact logic puzzles that enhance sequencing, pattern recognition, and persistence — ideal for enrichment sessions.</p>
+          <a href="/games/logic-blocks.html">View Details</a>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Delit Group</p>
+    <p><strong>Delit Group</strong> · E-10/524, Nehru Vihar, Delhi 110094 · GST: 07BALPG97451ZL</p>
+    <p>📞 +91 9654850604 · ✉️ <a href="mailto:support@delitgroup.in" style="color:white;">support@delitgroup.in</a></p>
+    <p>© <span id="year"></span> Delit Group. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
